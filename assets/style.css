@@ -3,7 +3,7 @@
     background-position: center;
     background-size: cover;
 	color: white;
-	font-family: 'Raleway', sans-serif;
+	height: 200px;
 	margin-bottom: auto;
 	padding-bottom: 20px;
 	padding-top: 25px;
@@ -11,4 +11,17 @@
 	margin-left: 10%;
 	text-align: center;
 	margin: 0 auto;
+}
+
+h1 {
+	font-family: 'Sacramento', cursive;
+	font-size: 100px;
+	margin-top: 25px;
+}
+
+.btn {
+	margin: 10px;
+	opacity: .8;
+	background-color: black;
+	border-color: blue;
 }
