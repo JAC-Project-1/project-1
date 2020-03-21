@@ -1,7 +1,10 @@
-$(document).ready(function () {
-    /**
-     * Age verification modal
-     */
+document.addEventListener('DOMContentLoaded', function() {
+
+  
+  
+
+
+
 
     var age_verification = function () {
 
