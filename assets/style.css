@@ -3,7 +3,11 @@
     background-position: center;
     background-size: cover;
 	color: white;
+<<<<<<< HEAD
 	font-family: 'Raleway', sans-serif;
+=======
+	height: 200px;
+>>>>>>> 865bf09e9e4cfd866a09b9ae977307aceafc5735
 	margin-bottom: auto;
 	padding-bottom: 20px;
 	padding-top: 25px;
@@ -11,4 +15,20 @@
 	margin-left: 10%;
 	text-align: center;
 	margin: 0 auto;
+<<<<<<< HEAD
+=======
+}
+
+h1 {
+	font-family: 'Sacramento', cursive;
+	font-size: 100px;
+	margin-top: 25px;
+}
+
+.btn {
+	margin: 10px;
+	opacity: .8;
+	background-color: black;
+	border-color: blue;
+>>>>>>> 865bf09e9e4cfd866a09b9ae977307aceafc5735
 }
