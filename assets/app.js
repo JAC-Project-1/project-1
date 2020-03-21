@@ -18,11 +18,13 @@ function displayButtons() {
 displayButtons();
 
 
+$(".wineColor").on("click", function() {
+    // var wine = $(this).attr("data-name");
+    var wineColor = $(this).attr("data-name");
+    console.log(wineColor);
+    var country = 
 
-
-$("button").on("click", function() {
-    var wine = $(this).attr("data-name");
-    var queryURL = "https://api.globalwinescore.com/globalwinescores/latest/?vintage=2000&color=red&limit=5";
+    var queryURL = "https://api.globalwinescore.com/globalwinescores/latest/?color=red&limit=5";
     var proxy = "https://cors-anywhere.herokuapp.com/"
 
     $.ajax({

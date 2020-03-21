@@ -8,6 +8,15 @@
 
     <!-- bootstrap CDN -->
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css">
+    <script src="https://code.jquery.com/jquery-3.4.1.slim.min.js"
+        integrity="sha384-J6qa4849blE2+poT4WnyKhv5vZF5SrPo0iEjwBvKU7imGFAV0wwj1yYfoRSJoZ+n"
+        crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js"
+        integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo"
+        crossorigin="anonymous"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.min.js"
+        integrity="sha384-wfSDF2E50Y2D1uUdj0O3uMBJnjuUD4Ih7YwaYd1iqfktj0Uod8GCExl3Og8ifwB6"
+        crossorigin="anonymous"></script>
 
     <!-- stylesheet -->
     <link rel="stylesheet" type="text/css" href="./assets/style.css">
@@ -24,20 +33,20 @@
         </div>
     </div>
 
-
-
-    <!-- main Container -->
+    <!-- left container -->
     <div class="container-fluid text-center">
         <div class="row content">
             <div class="col-sm-2 sidenav">
             </div>
+
+            <!-- main Container -->
             <div class="col-sm-8 text-left">
                 <br>
                 <h3>Common Types of Wine (the top varieties)</h3>
                 <p>Wine is made with grapes, but not typical table grapes you’ll find at the grocery. Wine grapes (latin
                     name:
                     Vitis vinifera) have thick skins, are small, sweet, and contain seeds. </p>
-                <p> There are many different kinds of wine grapes–over a thousand,– but here some common choices you’ll
+                <p> There are many different kinds of wine grapes - over a thousand, but here some common choices you’ll
                     find in the
                     grocery store.</p>
                 <p>Click the buttons to learn more about each wine</p>
@@ -45,17 +54,53 @@
                 <!-- Buttons -->
                 <div id="buttonList" class="container">
                 </div>
-            </div>
-            <div class="col-sm-2 sidenav">
+
+
+                <!-- Get User Input -->
+                <hr>
+                <div class="container">
+                    <h3> Let Us Recommend a Bottle </h3>
+                    <div class="row">
+                        <div class="col-sm-4"></div>
+                        <p>Pick a Color</p>
+                        <button class="btn btn-secondary wineColor" data-name="red">Red</button>
+                        <button class="btn btn-secondary wineColor" data-name="white">White</button>
+                        <button class="btn btn-secondary wineColor" data-name="pink">Pink</button>
+                    </div>
+
+
+
+                    <div class="row">
+                        <div class="col-sm-4"></div>
+                        <p>Select a Country</p>
+                        <div class="dropdown">
+                            <button class="btn btn-secondary dropdown-toggle" type="button" id="dropdownMenuButton"
+                                data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                                Country
+                            </button>
+                            <div class="dropdown-menu" aria-labelledby="dropdownMenuButton">
+                                <button class="dropdown-item" type="button">France</button>
+                                <button class="dropdown-item" type="button">USA</button>
+                                <button class="dropdown-item" type="button">Italy</button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+
+
+
+                <!-- right container -->
+                <div class="col-sm-2 sidenav">
+                </div>
             </div>
         </div>
-    </div>
 
 
-    <script src="https://code.jquery.com/jquery-3.4.1.min.js"
-        integrity="sha256-CSXorXvZcTkaix6Yvo6HppcZGetbYMGWSFlBw8HfCJo=" crossorigin="anonymous"></script>
+        <script src="https://code.jquery.com/jquery-3.4.1.min.js"
+            integrity="sha256-CSXorXvZcTkaix6Yvo6HppcZGetbYMGWSFlBw8HfCJo=" crossorigin="anonymous"></script>
 
-    <script type="text/javascript" src="assets/app.js"></script>
+        <script type="text/javascript" src="assets/app.js"></script>
 
 
 </body>
