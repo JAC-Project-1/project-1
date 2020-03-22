@@ -24,39 +24,43 @@
         integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous">
     </script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/moment.js/2.24.0/moment.min.js"></script>
+    <script type='text/javascript' src='http://www.bing.com/api/maps/mapcontrol?callback=GetMap&branch=experimental&key=AuA74d7xZ2653coU0pUYku6IsU67j_wncOmTg__SX0iR1WuqDZrL8VHHr2DFTMA3' async defer></script>
+
 </head>
 
 <body>
-
     <div class="jumbotron">
-            <div class="container">
-                        <h1>Learn about Wine! </h1>
-                    </div>
+        <div class="container">
+                    <h1>Learn about Wine! </h1>
                 </div>
-               
-                <!-- Buttons -->
-                <div id="buttonList" class="container">
-                </div>
-                <!-- main Container -->
-                <div class="container">
-                    <div class="col-xs-9 col-sm-9 col-md-9 col-lg-9">
             </div>
+           
+            <!-- Buttons -->
+            <div id="buttonList" class="container">
+            </div>
+            <!-- main Container -->
+            <div class="container">
+                <div class="col-xs-9 col-sm-9 col-md-9 col-lg-9">
+        </div>
+</div>
+
+<div class="card">   
+    <h5 class="card-header">Your Wine Choice</h5>
+
+ 
+    <div class="card-body">
+             <div id="results"></div>
+     
     </div>
 
-    <div class="card">   
-        <h5 class="card-header">Your Wine Choice</h5>
+  </div>
 
-     
-        <div class="card-body">
-                 <div id="results"></div>
-         
-        </div>
+      <div id="myMap" style='position:relative;width:600px;height:400px;'></div>
   
-      </div>
-
     <script src="scripts/button.js"></script>
  
     <script src="scripts/javascript.js"></script>
+    <script src="scripts/map.js"></script>
 </body>
 
 </html>

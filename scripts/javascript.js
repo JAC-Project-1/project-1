@@ -112,9 +112,6 @@ document.addEventListener('DOMContentLoaded', function() {
             }
         }); //end $('.modal-footer button').click(function()
 
-
-
-
         /**
          * Toggles modal window
          */
