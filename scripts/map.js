@@ -1,8 +1,8 @@
-
+for (var i = 0; i < searchPlaces.length; i++) {
         var latitude="";
         var longitude="";
-        var searchText="paris france"
-        fetch('https://geocoder.ls.hereapi.com/6.2/geocode.json?apiKey=Tdk4bDsH0c_93qop53EKHV1F8NPY9NtESC1sYjTEtG8&searchtext='+searchText)
+      
+        fetch('https://geocoder.ls.hereapi.com/6.2/geocode.json?apiKey=Tdk4bDsH0c_93qop53EKHV1F8NPY9NtESC1sYjTEtG8&searchtext='+searchPlaces[i])
 .then(
 function(response) {
   if (response.status !== 200) {
@@ -13,10 +13,12 @@ function(response) {
 
   // Examine the text in the response
   response.json().then(function(data) {
-    console.log(data);
-    console.log(data.Response.View["0"].Result["0"].Location.DisplayPosition);
+   // console.log(data);
+    //console.log(data.Response.View["0"].Result["0"].Location.DisplayPosition);
     latitude= data.Response.View["0"].Result["0"].Location.DisplayPosition.Latitude;
-    longitude= data.Response.View["0"].Result["0"].Location.DisplayPosition.Longitude;
+   
+    longitude= data.Response.View["0"].Result["0"].Location.DisplayPosition.Longitude; 
+    console.log (latitude, longitude);
   });
 }
 )
@@ -45,3 +47,6 @@ var center = map.getCenter();
     //Add the pushpin to the map
     map.entities.push(pin);
         }
+
+
+      }
