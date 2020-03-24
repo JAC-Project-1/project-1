@@ -3,11 +3,8 @@
     background-position: center;
     background-size: cover;
 	color: white;
-<<<<<<< HEAD
-	font-family: 'Raleway', sans-serif;
-=======
+	text-shadow: -1px 1px 2px #000; 
 	height: 200px;
->>>>>>> 865bf09e9e4cfd866a09b9ae977307aceafc5735
 	margin-bottom: auto;
 	padding-bottom: 20px;
 	padding-top: 25px;
@@ -15,8 +12,6 @@
 	margin-left: 10%;
 	text-align: center;
 	margin: 0 auto;
-<<<<<<< HEAD
-=======
 }
 
 h1 {
@@ -30,5 +25,8 @@ h1 {
 	opacity: .8;
 	background-color: black;
 	border-color: blue;
->>>>>>> 865bf09e9e4cfd866a09b9ae977307aceafc5735
+}
+
+h3 {
+ text-align: center;
 }
