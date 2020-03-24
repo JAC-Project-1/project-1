@@ -28,6 +28,10 @@
         integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1" crossorigin="anonymous">
         </script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/moment.js/2.24.0/moment.min.js"></script>
+   
+    <!-- favicon image -->
+    <link rel="icon" type="image/png" sizes="16x16" href="./assets/images/favicon.png">
+
 </head>
 
 <body>
@@ -83,13 +87,15 @@
                 <!-- Get User Input -->
                 <hr>
                 <div class="container">
+                    
+                        <h3>Let Us Recommend a Bottle </h3>
+                        <!-- <div class="row">
+                        
+                        </div> -->
+                    
                     <div class="row">
-                        <h3>Let Us Recommend a Bottle (Give us a few seconds to uncork) </h3>
-
-
-                    </div>
-                    <div class="row">
-                        <div class="col-sm-4">
+                        <div class="col-sm-12" align="center">
+                            <p>(Give us a few seconds to uncork your bottles) </p>
                             <p>Pick a Color</p>
                             <button class="btn btn-secondary wineColor" data-name="red">Red</button>
                             <button class="btn btn-secondary wineColor" data-name="white">White</button>
@@ -123,7 +129,7 @@
                 </div>
 
 
-                <div class="card mb-4">
+                <div class="card mb-8">
                     <div class="card-header"> Might we recommend: </div>
                     <div class="card-body">
                         <table class="table table-sm table-hover" id='wine-table'>
