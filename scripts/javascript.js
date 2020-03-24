@@ -1,10 +1,5 @@
 document.addEventListener('DOMContentLoaded', function() {
 
-  
-  
-
-
-
 
     var age_verification = function () {
 
@@ -93,17 +88,18 @@ document.addEventListener('DOMContentLoaded', function() {
                 if (id == "age-no" || ageDiff < 21) {
 
                     sessionStorage.setItem('age', 'false');
-                    $("#myModal").modal("show");
+                  //  $("#myModal").modal("show");
 
                 } else if (id == "age-yes" && ageDiff >= 21) { 
 
                     sessionStorage.setItem('age', 'true');
-
+                        console.log(id);
                     /*
                      *Execute click on button shows Adult content on the page
-                     */
+                     */ 
+                  
                     $('#myBtn4').trigger("click");
-                    $("#myModal").modal("hide");
+                     $("#myModal").modal("hide");
                 }
             } else if (age_21 == 'false') {
 

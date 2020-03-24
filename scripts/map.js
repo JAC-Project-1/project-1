@@ -1,7 +1,7 @@
 
         var latitude="";
         var longitude="";
-        var searchText="Oakville california"
+        var searchText="paris france"
         fetch('https://geocoder.ls.hereapi.com/6.2/geocode.json?apiKey=Tdk4bDsH0c_93qop53EKHV1F8NPY9NtESC1sYjTEtG8&searchtext='+searchText)
 .then(
 function(response) {
