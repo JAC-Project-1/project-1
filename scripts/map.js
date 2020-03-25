@@ -1,8 +1,8 @@
-for (var i = 0; i < searchPlaces.length; i++) {
+
         var latitude="";
         var longitude="";
-      
-        fetch('https://geocoder.ls.hereapi.com/6.2/geocode.json?apiKey=Tdk4bDsH0c_93qop53EKHV1F8NPY9NtESC1sYjTEtG8&searchtext='+searchPlaces[i])
+    
+        fetch('https://geocoder.ls.hereapi.com/6.2/geocode.json?apiKey=Tdk4bDsH0c_93qop53EKHV1F8NPY9NtESC1sYjTEtG8&searchtext='+searchPlaces)
 .then(
 function(response) {
   if (response.status !== 200) {
@@ -32,14 +32,14 @@ function GetMap()
         {
             var map = new Microsoft.Maps.Map('#myMap', {
 credentials: 'AuA74d7xZ2653coU0pUYku6IsU67j_wncOmTg__SX0iR1WuqDZrL8VHHr2DFTMA3',
-center: new Microsoft.Maps.Location(latitude, longitude),
+center: new Microsoft.Maps.Location(latitude,longitude),
 mapTypeId: Microsoft.Maps.MapTypeId.aerial,
 zoom: 10
 });
 var center = map.getCenter();
     //Create custom Pushpin
     var pin = new Microsoft.Maps.Pushpin(center, {
-        title: searchText,
+        title: "ok",
         subTitle: 'Wine Country',
         text: '1'
     });
@@ -49,4 +49,4 @@ var center = map.getCenter();
         }
 
 
-      }
+      

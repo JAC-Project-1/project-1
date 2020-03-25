@@ -3,10 +3,7 @@
     background-position: center;
     background-size: cover;
 	color: white;
-<<<<<<< HEAD
-=======
 	text-shadow: -1px 1px 2px #000; 
->>>>>>> upstream/master
 	height: 200px;
 	margin-bottom: auto;
 	padding-bottom: 20px;
@@ -29,13 +26,7 @@ h1 {
 	background-color: black;
 	border-color: blue;
 }
-<<<<<<< HEAD
-#map {
-	height: 100%;
-  }
-=======
 
 h3 {
  text-align: center;
 }
->>>>>>> upstream/master

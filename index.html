@@ -49,7 +49,7 @@
         <div class="col-xs-9 col-sm-9 col-md-9 col-lg-9">
         </div>
     </div>
-
+ 
     <!-- left container -->
     <div class="container-fluid text-center">
         <div class="row content">
@@ -82,7 +82,7 @@
                     </div>
 
                 </div>
-
+                
                 <!-- Get User Input -->
                 <hr>
                 <div class="container">
@@ -98,29 +98,7 @@
                             <button class="btn btn-secondary wineColor" data-name="white">White</button>
                             <button class="btn btn-secondary wineColor" data-name="pink">Pink</button>
 
-                            <!-- <div class="col-sm-8"> -->
-                            <!-- <p>Select a Country</p>
-                            <div class="dropdown">
-                                <button class="btn btn-secondary dropdown-toggle" type="button" id="dropdownMenuButton"
-                                    data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
-                                    Country
-                                </button>
-                                <div class="dropdown-menu" aria-labelledby="dropdownMenuButton">
-                                    <button class="dropdown-item" type="button" data-name="France">France</button>
-                                    <button class="dropdown-item" type="button" data-name="USA">USA</button>
-                                    <button class="dropdown-item" type="button" data-name="Italy">Italy</button>
-                                    <button class="dropdown-item" type="button" data-name="Australia">Australia</button>
-                                    <button class="dropdown-item" type="button" data-name="Argentina">Argentina</button>
-                                    <button class="dropdown-item" type="button" data-name="New Zealand">New
-                                        Zealand</button>
-                                    <button class="dropdown-item" type="button" data-name="Chile">Chile</button>
-                                    <button class="dropdown-item" type="button" data-name="Spain">Spain</button>
-                                    <button class="dropdown-item" type="button" data-name="South Africa">South
-                                        Africa</button>
-                                    <button class="dropdown-item" type="button" data-name="Sicily">Sicily</button>
-                                </div>
-
-                            </div> -->
+        
                         </div>
                     </div>
                 </div>
@@ -132,6 +110,7 @@
                         <table class="table table-sm table-hover" id='wine-table'>
                             <thead>
                                 <tr>
+                                   <th scope="col">Map it</th>
                                     <th scope="col">Wine Name</th>
                                     <th scope="col">Wine Score</th>
                                     <th scope="col">Wine Country</th>
@@ -151,15 +130,17 @@
                 </div>
             </div>
         </div>
-        <div id="myMap" style='position:relative;width:600px;height:400px;'></div>
+    </div>
+ 
+       
 
   
-
-       <script src="scripts/app.js"></script>      
+<div class="mapHere" style="height:500px; width:370;"></div>
+        
 <script type='text/javascript' src='http://www.bing.com/api/maps/mapcontrol?callback=GetMap&branch=experimental&key=AuA74d7xZ2653coU0pUYku6IsU67j_wncOmTg__SX0iR1WuqDZrL8VHHr2DFTMA3' async defer></script>
-     
-  <script src="scripts/map.js"></script>
 
+ <!-- <script src="scripts/map.js"></script> -->
+  <script src="scripts/app.js"></script> 
         <script src="scripts/button.js"></script>
 
         <script src="scripts/javascript.js"></script>
