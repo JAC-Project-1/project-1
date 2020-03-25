@@ -111,6 +111,7 @@ document.addEventListener('DOMContentLoaded', function() {
         /**
          * Toggles modal window
          */
+        $('#myModal').modal({backdrop: 'static', keyboard: false})  ;
        $('#myModal').modal("toggle");
     } //end age verification()
 
