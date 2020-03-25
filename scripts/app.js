@@ -1,6 +1,3 @@
-
-    
-
 $(document).ready(function () {
   // array
   var grapes = ["Riesling", "Chardonnay", "Pinot Grigio", "Sauvignon Blanc", "Pinot Noir", "Zinfandel", "Syrah", "Cabernet Sauvignon"];
@@ -49,13 +46,11 @@ $(document).ready(function () {
     var proxy = "https://cors-anywhere.herokuapp.com/"
 
     $.ajax({
-        url: proxy + queryURL,
-        method: "GET",
-        dataType: 'json',
-        beforeSend: function (xhr) {
-          xhr.setRequestHeader('Authorization', 'Token 52e6dfd158b34f0d6106e1afc0e639c438a2a387');
-        },
-      })
+      url: proxy + queryURL,
+      method: "GET",
+      dataType: 'json',
+      beforeSend: function (xhr) { xhr.setRequestHeader('Authorization', 'Token 52e6dfd158b34f0d6106e1afc0e639c438a2a387'); },
+    })
 
       .then(function (response) {
         console.log(response);
@@ -63,6 +58,7 @@ $(document).ready(function () {
         jQuery('<div/>', {
           id: 'myMap'
       }).appendTo($('.mapHere'));
+
         for (var i = 0; i < results.length; i++) {
           // pull wine score and country
           // var wineDiv = $("<div>");
